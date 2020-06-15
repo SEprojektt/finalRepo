@@ -4,6 +4,7 @@ import 'package:atmui/menu.dart';
 import 'package:atmui/withdraw.dart';
 import 'Phone.dart';
 import 'package:flutter/material.dart';
+import 'package:atmui/BalanceView.dart';
 
 import 'deposit.dart';
 
@@ -13,13 +14,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: StartPage.id,
+      initialRoute: Menu.id,
       routes: {
         StartPage.id: (context) => StartPage(),
         Phone.id: (context) => Phone(),
         Menu.id: (context) => Menu(),
         Withdraw.id: (context) => Withdraw(),
-        Deposit.id: (context) => Deposit()
+        Deposit.id: (context) => Deposit(),
+        'BalanceView' :(context)=>BalanceView(),
       },
     );
   }

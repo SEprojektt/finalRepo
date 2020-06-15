@@ -26,6 +26,7 @@ class _WithdrawState extends State<Withdraw> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Color.fromRGBO(244, 229, 232,1),
         body: Container(
           child: Stack(
             children: <Widget>[
@@ -48,7 +49,7 @@ class _WithdrawState extends State<Withdraw> {
                         height: 1.5, //height of the cursor
                       ),
                       decoration: InputDecoration(
-                        hintText: "Enter the Amt to Withdraw",
+                        hintText: "₹  Enter the Amount to Withdraw",
                         hintStyle: TextStyle(
                           fontSize: 20,
                           color: Colors.white,
@@ -63,12 +64,12 @@ class _WithdrawState extends State<Withdraw> {
                         ),
                         enabledBorder: OutlineInputBorder(
                           borderSide:
-                              BorderSide(color: Colors.blueAccent, width: 1.0),
+                              BorderSide(color: Colors.teal, width: 1.0),
                           borderRadius: BorderRadius.all(Radius.circular(32.0)),
                         ),
                         focusedBorder: OutlineInputBorder(
                           borderSide:
-                              BorderSide(color: Colors.blueAccent, width: 2.0),
+                              BorderSide(color: Colors.teal, width: 2.0),
                           borderRadius: BorderRadius.all(Radius.circular(32.0)),
                         ),
                       ),
@@ -83,7 +84,7 @@ class _WithdrawState extends State<Withdraw> {
                       padding: EdgeInsets.symmetric(vertical: 16),
                       child: Material(
                         elevation: 5,
-                        color: Color(0xFF311b92),
+                          color: Color.fromRGBO(14, 197, 207,0.9),
                         //color: Colors.white,
                         borderRadius: BorderRadius.circular(30.0),
                         child: MaterialButton(
